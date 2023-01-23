@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <script type="text/javascript" src="./funciones.js"></script>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+         <img class="logo" src="imagenes/Logo.png" alt="logo de alura"  >
+    </header>  
+   <main>
+    <section>
+        <textarea class="text-area" name="text" id="textoEncriptado" cols="38" rows="10" placeholder="Ingrese el texto aquí" spellcheck="false"></textarea>
+        <div >
+
+        <h6 class="informacion"><img src="./imagenes/Vector.png " alt="signo de exclamacion">Solo letras minúsculas y sin acentos</h6>
+
+        </div>
+        <div class="botones">
+            <button class="btn-encriptador" id="btn">Encriptar</button>
+            <button class="btn-desencriptador" id="btn">Desencriptar</button>
+        </div>
+    </section>
+    <section>
+        <textarea class="mensaje" cols="20" rows="10" id="textoDesencriptado" name="texto-mensaje"></textarea>
+        <div>
+            <button class="btn-copiador">Copiar</button>
+        </div>
+    </section>
+<script>
+    var btn=document.querySelector("textarea");
+    btn.onclick= encriptar;
+
+    var btn= document.querySelector("texto-mensaje");
+    btn.onclick= desencriptar;
+</script>
+   </main> 
+     <footer>
+    <img src="./imagenes/Logo.png" alt="logo de alura">
+    <div>
+        <p class="pie">&#169;Challenge de Alura Latam 2023- Realizado por Maria Luciana Diaz</p>
+    </div>
+</footer>
+</body>
+
+
+
+</html>
